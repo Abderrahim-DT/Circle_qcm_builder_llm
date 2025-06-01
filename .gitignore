@@ -3,9 +3,6 @@ __pycache__/
 *.pyc
 .venv/
 
-# Data
-data/raw/
-data/processed/
 *.ipynb_checkpoints
 
 # VS Code
