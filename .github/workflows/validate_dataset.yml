@@ -1,0 +1,21 @@
+name: Validate JSONL Dataset
+
+on:
+  push:
+    paths:
+      - 'data/annotated/**.jsonl'
+      - 'scripts/validate_dataset.py'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install pydantic
+      - name: Run validation script
+        run: python scripts/validate_dataset.py
