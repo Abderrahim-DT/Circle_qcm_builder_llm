@@ -1,12 +1,12 @@
 # Exemples de commandes Make
 extract:
-\tpython scripts/extract_text.py
+	./Circle_venv/bin/python scripts/extract.py
 
-annotate:
-\tpython scripts/annotate.py
+# annotate:
+#	./Circle_venv/bin/python scripts/annotate.py
 
-prepare:
-\tpython scripts/prepare_dataset.py
+# prepare:
+#	./Circle_venv/bin/python scripts/prepare_dataset.py
 
-validate:
-\tpython scripts/validate_dataset.py
+# validate:
+#	./Circle_venv/bin/python scripts/validate_dataset.py

@@ -5,5 +5,21 @@ __pycache__/
 
 *.ipynb_checkpoints
 
-# VS Code
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDE
 .vscode/
+.idea/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+# data files
+./data/S1
+./data/texts/S1
+
